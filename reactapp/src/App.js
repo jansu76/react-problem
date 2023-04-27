@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import DummyComponent from '@my-dummy-namespace/dummy-component';
+import CodeInputPage from '@my-dummy-namespace/dummy-component';
 
 function App() {
-  console.log('dummy: ' + DummyComponent)
+  console.log('dummy: ' + CodeInputPage)
   return (
     <div className="App">
       <header className="App-header">
