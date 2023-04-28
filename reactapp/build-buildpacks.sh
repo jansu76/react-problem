@@ -6,11 +6,10 @@ BASEDIR="$( cd "$( dirname "$0" )" && pwd )"
 cd $BASEDIR
 echo Building OCI container image using buildpacks. Building in $BASEDIR
 
-pack build ilta/frontend-nginx \
+pack build myapp/frontend-nginx \
  --clear-cache \
  --builder paketobuildpacks/builder:base \
  --env BP_NODE_RUN_SCRIPTS=build \
  --env BP_WEB_SERVER=nginx \
  --env BP_DISABLE_SBOM=true \
- --env BP_WEB_SERVER_ROOT=build \
- --env BP_NODE_VERSION="18.14.2"
+ --env BP_WEB_SERVER_ROOT=build
