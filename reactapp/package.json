@@ -17,6 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build-after-pause": "whoami && echo $PATH && pwd && sleep 9999999 && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
